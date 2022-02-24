@@ -54,7 +54,9 @@ CREATE TABLE ConfirmationToken(
 
 CREATE TABLE Region(
 	id SERIAL PRIMARY KEY NOT NULL,
-	nom VARCHAR(255)
+	nom VARCHAR(255),
+	latitude decimal,
+	longitude decimal
 );
 
 INSERT INTO Region(nom,latitude,longitude) VALUES('Diana' , -13.2043844,49.1111434);
